@@ -1,0 +1,9 @@
+worlds:
+  world:
+    generator: DEFAULT
+    allow-nether: true
+    allow-end: true
+  world_nether:
+    generator: DEFAULT
+  world_the_end:
+    generator: DEFAULT
