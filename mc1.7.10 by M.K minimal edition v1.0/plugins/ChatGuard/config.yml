@@ -1,0 +1,46 @@
+Replacements:
+- 0|o
+- 1|l
+- '@|a'
+CheckUpdates: false
+Caps: true
+Flood: true
+Swear: true
+Advertisment: true
+CapsPercent: 80
+FloodTime: 10
+Cancel: true
+Alternative: <С†РµРЅР·СѓСЂР°>
+Warnings:
+  enable: false
+  custom: true
+  count: 5
+  custom-alts:
+    swear: <РјР°С‚>
+    advert: <СЂРµРєР»Р°РјР°>
+Check-cmds:
+- /me
+- /msg
+- /tell
+Patterns:
+  ip: \d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(:\d*)?
+  domain: ([0-9a-z_Р°-СЏ]{2,}\.)+(ru|com|org|ua|СЂС„|su|tv|net|biz|info|name|mobi|kz|by|lv|eu|tk|СЃРѕm|cРѕРј)(:\d*)?
+Punishment:
+  ban: false
+  kick: false
+  mute:
+    enable: false
+    minutes: 5
+  kill: false
+  command: say {player} Р±С‹Р» РЅР°РєР°Р·Р°РЅ Р·Р° {reason}
+  reason: РўС‹ РїР»РѕС…РѕР№ РјР°Р»СЊС‡РёРє!
+Whitelist:
+- 127.0.0.1
+caps-length: 3
+Listen-commands: true
+Informing:
+  swear: true
+  caps: true
+  advert: true
+  flood: true
+Check-signs: true

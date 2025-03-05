@@ -1,0 +1,19 @@
+run:
+  clearVil:
+    interval: 0
+    broadcast: true
+    broadcastmsg: '&2[Villager-Cleaner] &3Удалено +RemoveAmount жителей!'
+    world-filter:
+    - neverClear_world
+    clear-list:
+    - Villager
+  mypvpcleaner:
+    interval: 0
+    limit: 0
+    broadcast: true
+    broadcastmsg: '&6[PVP-Cleaner] &3Удалено +RemoveAmount предметов!'
+    world-filter:
+    - world_end
+    clear-list:
+    - Arrow
+    - Item

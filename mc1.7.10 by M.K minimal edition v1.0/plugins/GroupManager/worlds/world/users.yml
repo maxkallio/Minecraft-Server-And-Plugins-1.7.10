@@ -1,0 +1,6 @@
+users:
+  YourName:
+    group: admin
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

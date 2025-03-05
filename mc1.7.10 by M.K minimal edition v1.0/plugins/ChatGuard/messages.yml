@@ -1,0 +1,25 @@
+wordexist: This word already exist!
+newword: Added new word
+addwarns: Warns changed for
+remwarns: Warns changed for
+plnotfound: Player not found!
+warnszero: Player has no warnings
+getwarn: You were warned
+remwarn: You have removed warning
+caps: Stop capsing!
+flood: Stop flooding!
+swear: Stop swearing!
+adv: It is bad place for advertisment!
+muted: You has been muted!
+wordnotfound: Word not found!
+remword: Word removed
+givemute: Player unmuted
+unmuted: You can talk again
+trytoflood: 'Player $player$ tries to flooding: $message$'
+trytoswear: 'Player $player$ tries to swearing: $message$'
+trytoadv: 'Player $player$ tries to advertise: $message$'
+trytocaps: 'Player $player$ tries to capsing: $message$'
+globalmute: 'Global Mute: '
+yourwarns: 'Your warnings: '
+adminmute: $player$ is muted for $reason$
+adminunmute: $player$ unmuted

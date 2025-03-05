@@ -1,0 +1,8 @@
+enable: true
+lang: ru
+commands:
+  enable: false
+  list: []
+flags:
+  enable: true
+  use: deny

@@ -1,0 +1,16 @@
+cfg-version: 10
+message: '&cР’С‹ РґРѕСЃС‚РёРіР»Рё РіСЂР°РЅРёС†С‹ СЌС‚РѕРіРѕ РјРёСЂР°.'
+round-border: true
+debug-mode: false
+whoosh-effect: false
+portal-redirection: true
+knock-back-dist: 3.0
+timer-delay-ticks: 5
+remount-delay-ticks: 0
+dynmap-border-enabled: true
+dynmap-border-message: Р“СЂР°РЅРёС†Р° РјРёСЂР°.
+player-killed-bad-spawn: false
+deny-enderpearl: true
+fill-autosave-frequency: 30
+bypass-list: []
+fill-memory-tolerance: 500

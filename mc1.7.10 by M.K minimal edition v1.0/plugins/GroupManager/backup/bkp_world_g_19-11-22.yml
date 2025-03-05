@@ -1,0 +1,164 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+#
+# Группы подгтовил пользователь 4yKoTKa - http://rubukkit.org/members/4ykotka.77218/
+
+groups:
+  player:
+    default: true
+    permissions:
+    - -authme.unregister
+    - -authme.logout
+    - essentials.spawn
+    - essentials.rules
+    - essentials.motd
+    - essentials.warp
+    - essentials.list
+    - essentials.helpop
+    - essentials.help
+    - essentials.afk
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.balance
+    - essentials.home
+    - essentials.kit
+    - essentials.pay
+    - essentials.sethome
+    - essentials.delhome
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.msg
+    - essentials.ignore
+    - essentials.signs.use.trade
+    - essentials.signs.use.buy
+    - essentials.signs.use.sell
+    - essentials.tpa
+    - worldedit.selection.hpos
+    - worldedit.selection.pos
+    - worldedit.wand
+    - worldedit.selection.expand
+    - worldguard.region.claim
+    - worldguard.region.remove.own.*
+    - worldguard.region.info
+    - worldguard.region.info.own
+    - worldguard.region.info.member
+    - worldguard.region.addowner.own.*
+    - worldguard.region.removeowner.own.*
+    - worldguard.region.addmember.own.*
+    - worldguard.region.removemember.own.*
+    - worldguard.region.wand
+    - worldguard.region.select.own.*
+    - noob-protector.pvp-on
+    - automessage.receive.default
+    inheritance:
+    - g:bukkit_default
+    info:
+      prefix: ''
+      build: true
+      suffix: ''
+  vip:
+    default: false
+    permissions:
+    - essentials.warp.list
+    - essentials.setwarp
+    - essentials.sethome.multiple.vip
+    - essentials.kits.vip
+    - clearworld.antidel
+    - essentials.balance.others
+    - essentials.compass
+    - essentials.back.ondeath
+    - essentials.tpahere
+    - essentials.joinfullserver
+    - automessage.receive.vip
+    - essentials.msg.color
+    - essentials.chat.color
+    inheritance:
+    - player
+    info:
+      prefix: '&6[VIP]&f '
+      build: true
+      suffix: ''
+  deluxe:
+    default: false
+    permissions:
+    - essentials.sethome.multiple.deluxe
+    - essentials.kits.deluxe
+    - essentials.kits.blocks
+    - worldborder.bypass
+    - essentials.tppos
+    - essentials.getpos
+    - essentials.feed
+    - essentials.hat
+    inheritance:
+    - vip
+    info:
+      prefix: '&3[Deluxe]&f '
+      build: true
+      suffix: ''
+  premium:
+    default: false
+    permissions:
+    - essentials.heal
+    - essentials.sethome.multiple.premium
+    - essentials.repair
+    - essentials.repair.armor
+    - essentials.repair.enchanted
+    - essentials.back
+    - -essentials.kits.viparmor
+    - -essentials.kits.vip
+    - -essentials.kits.viptools
+    - essentials.kits.premium
+    - essentials.tp
+    - essentials.weather
+    - essentials.ptime
+    - essentials.clearinventory
+    - essentials.tphere
+    inheritance:
+    - deluxe
+    info:
+      prefix: '&5[Premium]&f '
+      build: true
+      suffix: ''
+  moder:
+    default: false
+    permissions:
+    - noob-protector.protect
+    - noob-protector.unprotect
+    - lagg.check
+    - lagg.killmobs
+    - lagg.clear
+    - worldguard.*
+    - worldedit.*
+    inheritance:
+    - premium
+    - g:groupmanager_moderator
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:towny_moderator
+    - g:vanish_moderator
+    info:
+      prefix: '&9[Модератор]&f '
+      build: true
+      suffix: ''
+  admin:
+    default: false
+    permissions:
+    - '*'
+    inheritance:
+    - moder
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:towny_admin
+    - g:vanish_admin
+    info:
+      prefix: '&c[Администратор]&f '
+      build: true
+      suffix: ''
