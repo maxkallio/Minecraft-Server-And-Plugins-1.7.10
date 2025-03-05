@@ -1,6 +1,7 @@
 # 🏰 Minecraft 1.7.10 Server Plugins  
 
-Welcome to the **Minecraft 1.7.10 Server Plugins** repository! This repository contains a collection of essential plugins and configurations designed for **Minecraft 1.7.10 servers**. Whether you're setting up a new survival, PvP, or custom game mode server, these plugins will help enhance your server’s functionality and provide a better experience for players.  
+Welcome to the **Minecraft 1.7.10 Server Plugins** repository! This repository contains a collection of essential plugins, configurations and old server template designed for **Minecraft 1.7.10** . Whether you're setting up a new survival, PvP, or custom game mode server, these plugins will help enhance your server’s functionality and provide a better experience for players.
+
 
 ## 🌟 Features  
 - ✅ **Pre-configured Bukkit/Spigot server setup**  
