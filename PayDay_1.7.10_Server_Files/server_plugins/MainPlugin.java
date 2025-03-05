@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class MainPlugin extends JavaPlugin {
+
     @Override
     public void onEnable() {
         getLogger().info("[PayDayPlugin] Enabled for 1.7.10 server!");
