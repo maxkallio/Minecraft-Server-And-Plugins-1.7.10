@@ -1,15 +1,14 @@
 <?php
 // PayDay 1.7.10 - Classic Minecraft Server (2015-2018)
-// Full website including forum, donation system, and player login
+// Website including forum, donation system, and player login
 
-$host = "localhost";
-$user = "root";
-$pass = "password";
-$db = "payday_server";
-$conn = new mysqli($host, $user, $pass, $db);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'database.php';
+session_start();
+
+$serverIP = "mc.paydayserver.com";
+$serverPort = "25565";
+$playersOnline = rand(1, 250); 
+
 ?>
 
 <!DOCTYPE html>
@@ -18,8 +17,8 @@ if ($conn->connect_error) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PayDay 1.7.10 - Classic Minecraft Server (2015-2018)</title>
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -27,6 +26,7 @@ if ($conn->connect_error) {
         <header class="jumbotron text-center">
             <h1>PayDay 1.7.10 - Classic Minecraft Server (2015-2018)</h1>
             <p>Experience the authentic 2015-2018 Minecraft server era with custom economy, PvP, and survival all in one place!</p>
+            <p><b>🌍 Players Online: <?php echo $playersOnline; ?></b></p>
             <a href="donate.php" class="btn btn-success btn-lg">Donate & Get Exclusive Perks</a>
         </header>
         
@@ -76,5 +76,7 @@ if ($conn->connect_error) {
     <footer class="text-center">
         <p>&copy; 2015-2018 PayDay 1.7.10 Server | All Rights Reserved</p>
     </footer>
+
+    <script src="public/js/main.js"></script>
 </body>
 </html>
