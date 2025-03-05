@@ -1,0 +1,14 @@
+donations:
+  minAmount: 5.0
+  maxAmount: 100.0
+  ranks:
+    VIP: 10.0
+    MVP: 25.0
+    LEGEND: 50.0
+    TITAN: 100.0
+database:
+  host: localhost
+  port: 3306
+  user: root
+  password: password
+  name: payday_server
