@@ -1,0 +1,9 @@
+name: PayDayPlugin
+main: me.payday.MainPlugin
+version: 1.0
+author: PayDay Team
+commands:
+  rank:
+    description: Check your current rank.
+  donate:
+    description: Donate to upgrade rank.
